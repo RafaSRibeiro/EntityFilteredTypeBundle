@@ -1,0 +1,40 @@
+{
+  "name": "RafaSRibeiro/EntityFilteredTypeBundle",
+  "type": "symfony-bundle",
+  "description": "This bundle aim to provide classes to build some form entities dependents froms another form fields.",
+  "keywords": [
+    "Symfony",
+    "bundle",
+    "form",
+    "doctrine"
+  ],
+  "homepage": "https://github.com/RafaSRibeiro/EntityFilteredTypeBundle",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "Rafael S. Ribeiro",
+      "email": "rafaelsyprianoribeiro@hotmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "symfony/framework-bundle": "~2.8|~3.0|^4.0",
+    "symfony/form": "~2.8|~3.0|^4.0",
+    "doctrine/orm": "^2.4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "RafaSRibeiro\\Bundle\\EntityFilteredBundle\\": ""
+    }
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x.x-dev"
+    }
+  }
+}

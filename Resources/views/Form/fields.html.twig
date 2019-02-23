@@ -1,0 +1,17 @@
+{% block entity_filtered_widget %}
+	{% if depends_on %}
+		{% set attr = attr|merge({'data-depends-on-id': form.parent.children[depends_on].vars['id']}) %}
+	{% endif %}
+	{% if route_path %}
+		{% set attr = attr|merge({'data-route-path': route_path}) %}
+	{% endif %}
+	{% set attr = attr|merge({'data-route-method': route_method}) %}
+	{% set attr = attr|merge({'data-type': 'select-update'}) %}
+	{% set attr = attr|merge({'data-loading-label': loading_label}) %}
+	{% set attr = attr|merge({'data-placeholder': placeholder}) %}
+	{% set attr = attr|merge({'data-field-query': field_query}) %}
+	{% set attr = attr|merge({'data-route-key': route_key}) %}
+	{% set attr = attr|merge({'data-route-label': route_label}) %}
+	{% set attr = attr|merge({'class': 'select2 js-assunto-select'}) %}
+	{{- block('choice_widget') }}
+{% endblock %}
