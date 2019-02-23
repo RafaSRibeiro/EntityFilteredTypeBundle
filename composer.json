@@ -1,5 +1,5 @@
 {
-  "name": "RafaSRibeiro/EntityFilteredTypeBundle",
+  "name": "rafasribeiro/entity-filtered-type-bundle",
   "type": "symfony-bundle",
   "description": "This bundle aim to provide classes to build some form entities dependents froms another form fields.",
   "keywords": [
