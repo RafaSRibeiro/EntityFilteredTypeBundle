@@ -1,6 +1,6 @@
 <?php
 
-namespace RafaSRibeiro\Component\Form\Type;
+namespace RafaSRibeiro\Bundle\EntityFilteredBundle\Component\Form\Type;
 
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
