@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rafael.s.ribeiro
- * Date: 22/02/2019
- * Time: 08:52
- */
 
-namespace Component\Form\Extension\Core\Type;
+namespace RafaSRibeiro\Component\Form\Type;
 
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
