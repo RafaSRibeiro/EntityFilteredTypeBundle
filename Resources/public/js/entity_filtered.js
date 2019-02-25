@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    let currentEntityFilteredRequest = null;
     let selectUpdates = $("[data-type='select-update']");
     selectUpdates.each(function (key, element) {
         let elementoId = $(this).data('depends-on-id');
@@ -21,11 +22,14 @@ $(document).ready(function () {
                 [fieldQuery]: $(this).val()
             };
             if ($(this).val()) {
-                $.ajax({
+                currentEntityFilteredRequest = $.ajax({
                     type: routeMethod,
                     url: Routing.generate(routePath),
                     data: query,
                     beforeSend: function () {
+                        if (currentEntityFilteredRequest != null) {
+                            currentEntityFilteredRequest.abort();
+                        }
                         element.innerHTML = '<option selected=\"selected\">' + loadingLabel + '</option>';
                         cleanOptions(element)
                     },
