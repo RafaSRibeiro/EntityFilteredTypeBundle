@@ -11,7 +11,7 @@ class AppKernel extends Kernel {
 
     public function registerBundles() {
         $bundles = [
-            new RafaSRibeiro\Bundle\EntityFilteredBundle\EntityFilteredTypeBundle(),
+            new \RafaSRibeiro\Bundle\EntityFilteredBundle\EntityFilteredTypeBundle(),
         ];
         
         return $bundles;
@@ -21,10 +21,8 @@ class AppKernel extends Kernel {
 ####config.yml
 ````
 twig:
-    paths:
-        '%kernel.root_dir%/../vendor/rafasribeiro/entity-filtered-type-bundle/Resources/views': RafaSRibeiroEntityFilteredBundle
     form_themes:
-        - '@RafaSRibeiroEntityFilteredBundle/form/fields.html.twig'
+        - 'EntityFilteredTypeBundle:Form:fields.html.twig'
 ````        
 
 ####AbstractType
