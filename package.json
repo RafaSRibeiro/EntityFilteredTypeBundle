@@ -1,0 +1,23 @@
+{
+  "name": "entityfilteredtypebundle",
+  "version": "1.0.0",
+  "description": "Bundle Symfony criado para atualizar os dados por uma rota ajax.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaSRibeiro/EntityFilteredTypeBundle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaSRibeiro/EntityFilteredTypeBundle/issues"
+  },
+  "homepage": "https://github.com/RafaSRibeiro/EntityFilteredTypeBundle#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "select2": "^4.0.6-rc.1"
+  }
+}

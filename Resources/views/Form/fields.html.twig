@@ -7,8 +7,8 @@
 	{% endif %}
 	{% set attr = attr|merge({'data-route-method': route_method}) %}
 	{% set attr = attr|merge({'data-type': 'select-update'}) %}
-	{% set attr = attr|merge({'data-loading-label': loading_label}) %}
-	{% set attr = attr|merge({'data-placeholder': placeholder}) %}
+	{% set attr = attr|merge({'data-loading-label': loading_label | trans }) %}
+	{% set attr = attr|merge({'data-placeholder': placeholder | trans }) %}
 	{% set attr = attr|merge({'data-field-query': field_query}) %}
 	{% set attr = attr|merge({'data-route-key': route_key}) %}
 	{% set attr = attr|merge({'data-route-label': route_label}) %}
